@@ -1,0 +1,19 @@
+.location-section {
+  background-color: var(--text-p-color-2);
+  padding: 2.5rem 0;
+
+  .location-container {
+    container-type: inline-size;
+    padding: 0 2rem;
+    width: var(--screen-lg);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+
+    @media (min-width: 768px) {
+      padding: 0 5rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+} 

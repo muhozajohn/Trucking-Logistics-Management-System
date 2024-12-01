@@ -1,0 +1,59 @@
+.aboutContainer {
+  //   @apply px-8 md:px-20 container mx-auto;
+  width: var(--screen-sm);
+  margin: 0 auto;
+  display: grid;
+  padding: 0 4rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 3.5rem;
+
+  @media (min-width: 768px) {
+    width: var(--screen-md);
+    padding: 0 5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--orange-primary);
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--text-p-color-3);
+}
+
+.aboutButton {
+  background-color: var(--orange-primary);
+  transform: scale(1);
+  width: fit-content;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+
+}
+
+.imageSection {
+  width: 100%;
+}
+
+.image {
+  border-radius: 0.375rem;
+}
+

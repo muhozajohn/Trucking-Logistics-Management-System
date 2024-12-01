@@ -1,0 +1,41 @@
+.lcard {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  .icon {
+    font-size: 1.875rem;
+    color: var(--orange-primary);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      &--large {
+        font-size: 1.125rem;
+        font-weight: 500;
+      }
+
+      &--small {
+        font-size: 0.75rem;
+        font-weight: 400;
+        color: var(--text-p-color-3);
+      }
+    }
+
+    .description {
+      font-size: 0.875rem; // text-sm
+
+      &--small {
+        font-weight: 400; // font-normal
+        color: var(--text-p-color-3);
+      }
+
+      &--large {
+        font-weight: 500; // font-medium
+      }
+    }
+  }
+}
