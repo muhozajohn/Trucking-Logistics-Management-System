@@ -1,6 +1,6 @@
-import truck1 from "@/assets/truck1.jpg";
-import truck2 from "@/assets/truck2.jpg";
-import truck3 from "@/assets/truck3.jpg";
+import truck1 from "../assets/truck1.jpg";
+import truck2 from "../assets/truck2.jpg";
+import truck3 from "../assets/truck3.jpg";
 
 const images = {
   truck1,

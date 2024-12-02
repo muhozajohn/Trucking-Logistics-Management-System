@@ -1,8 +1,9 @@
 "use client";
 import { usePathname } from "next/navigation";
 import "./globals.scss";
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
+import Navigation from "../components/navigation";
+import Footer from "../components/footer";
+
 
 export default function RootLayoutWrapper({ children }) {
   const pathname = usePathname();

@@ -1,7 +1,7 @@
 import React from "react";
-import { trackingFeatures } from "@/components/json";
-import Lcard from "@/components/card";
-import "@/styles/services.scss";
+import { trackingFeatures } from "../../components/json";
+import Lcard from "../../components/card";
+import "../../styles/services.scss";
 
 const ServicePage = () => {
   return (

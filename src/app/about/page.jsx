@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { images } from "@/common";
-import Button from "@/common/Button";
+import { images } from "../../common";
+import Button from "../../common/Button";
 import styles from './AboutPage.module.scss';
 
 const AboutPage = () => {

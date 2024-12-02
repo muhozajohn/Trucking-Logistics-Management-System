@@ -1,9 +1,11 @@
 "use client";
 import React, { useState } from "react";
+// import { useGoogleLogin } from "@react-oauth/google";
+// import axios from "axios";
 import { FcGoogle } from "react-icons/fc";
 import { useRouter } from "next/navigation";
-import { checkLogin } from "@/services/authService";
-import Spinner from "@/common/Spinner";
+import { checkLogin } from "../../../services/authService";
+import Spinner from "../../../common/Spinner";
 import "./login.scss";
 
 const Login = () => {
@@ -27,6 +29,28 @@ const Login = () => {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
+
+  // const handleGoogleLogin = useGoogleLogin({
+  //   onSuccess: async (tokenResponse) => {
+  //     try {
+  //       const userInfo = await axios.get(
+  //         "https://www.googleapis.com/oauth2/v3/userinfo",
+  //         { headers: { Authorization: `Bearer ${tokenResponse.access_token}` } }
+  //       );
+
+  //       const result = await googleLogin(userInfo.data);
+
+  //       if (result.success) {
+  //         localStorage.setItem("user", JSON.stringify(result.user));
+  //         router.push("/dashboard");
+  //       } else {
+  //         setErrors({ login: result.message });
+  //       }
+  //     } catch (error) {
+  //       setErrors({ login: "Google login failed" });
+  //     }
+  //   },
+  // });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -96,7 +120,11 @@ const Login = () => {
           <span>or</span>
         </div>
 
-        <button className="google-btn" type="button">
+        <button
+          className="google-btn"
+          type="button"
+          // onClick={() => handleGoogleLogin()}
+        >
           <FcGoogle />
           Continue with Google
         </button>

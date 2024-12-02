@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { navLinks } from "./json";
-import Button from "@/common/Button";
+import Button from "../common/Button";
 import "../styles/navigation.scss";
 
 const Navigation = () => {

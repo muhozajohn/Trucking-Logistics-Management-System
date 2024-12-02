@@ -1,9 +1,8 @@
 import { FaTruck } from "react-icons/fa";
-import { MdTrackChanges ,MdNotificationsActive } from "react-icons/md";
-import { FaLocationDot ,FaPhoneVolume } from "react-icons/fa6";
+import { MdTrackChanges, MdNotificationsActive } from "react-icons/md";
+import { FaLocationDot, FaPhoneVolume } from "react-icons/fa6";
 import { LuClock1 } from "react-icons/lu";
-import images from "@/common/images";
-
+import images from "../common/images";
 
 export const trackingFeatures = [
   {
@@ -61,7 +60,6 @@ export const navLinks = [
     name: "blog",
     path: "/blog",
   },
-
 ];
 
 export const blogPosts = [
@@ -82,5 +80,24 @@ export const blogPosts = [
     image: images.truck3,
     title: "Sustainable Trucking",
     description: "How the transport industry is embracing sustainability...",
+  },
+];
+
+export const navigation = [
+  {
+    name: "Home",
+    route: "/dashboard",
+  },
+  {
+    name: "Trucks",
+    route: "/dashboard/trucks",
+  },
+  {
+    name: "Drivers",
+    route: "/dashboard/drivers",
+  },
+  {
+    name: "Orders",
+    route: "/dashboard/orders",
   },
 ];
