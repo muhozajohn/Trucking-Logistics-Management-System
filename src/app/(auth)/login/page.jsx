@@ -1,6 +1,7 @@
-import React from 'react'
-import './login.scss'
+import React from "react";
+import "./login.scss";
 import { FcGoogle } from "react-icons/fc";
+import Button from "@/common/Button";
 
 const Login = () => {
   return (
@@ -14,11 +15,9 @@ const Login = () => {
           <div className="form-group">
             <input type="password" placeholder="Password" required />
           </div>
-          <button type="submit" className="login-btn">
-            Login
-          </button>
+          <Button title="Login" path="/dashboard" className="login-btn" />
         </form>
-        
+
         <div className="divider">
           <span>or</span>
         </div>
@@ -29,7 +28,7 @@ const Login = () => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
