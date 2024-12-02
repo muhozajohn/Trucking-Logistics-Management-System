@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Trucking Logistics Management System
 
-## Getting Started
+Welcome to the **Trucking Logistics Management System**! This repository contains a fully functional frontend application built using Next.js, designed to simulate interactions between truck owners, drivers, and customers. 
 
-First, run the development server:
+---
 
+## **Features**
+- **User Authentication**: Google OAuth 2.0 via NextAuth for secure login.
+- **Dashboard**: Overview of trucks, drivers, and orders post-login.
+- **Truck Management**: CRUD operations and status management for trucks.
+- **Driver Management**: CRUD operations and truck assignment for drivers.
+- **Order Management**: CRUD operations for orders, driver assignment, and truck status updates.
+- **Responsive Design**: Mobile-friendly layout with SCSS styling.
+- **API Integration**: React Query for seamless data fetching and manipulation.
+- **Error Handling**: User-friendly error messages and validation.
+
+---
+
+## **Technologies Used**
+- **Frontend**: Next.js (v14+), React Query, SCSS
+- **Authentication**: NextAuth (Google OAuth 2.0)
+- **Backend Simulation**: JSON Server
+- **State Management**: React Context API
+- **Testing** (Optional): Cypress (for unit and integration testing)
+
+---
+
+## **Setup Instructions**
+### **1. Clone the Repository**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/muhozajohn/Trucking-Logistics-Management-System.git
+cd Trucking-Logistics-Management-System
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **2. Install Dependencies**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### **3. Set Up Environment Variables**
+Create a `.env.local` file and add the following:
+```env
+NEXT_PUBLIC_GOOGLE_CLIENT_ID=<your-google-client-id>
+NEXT_PUBLIC_GOOGLE_CLIENT_SECRET=<your-google-client-secret>
+NEXTAUTH_URL=http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **4. Start JSON Server**
+Set up `db.json` with the required data:
+```json
+{
+  "trucks": [],
+  "drivers": [],
+  "orders": []
+}
+```
+Run JSON Server:
+```bash
+npx json-server --watch db.json --port 5000
+```
 
-## Learn More
+### **5. Start the Development Server**
+```bash
+npm run dev
+```
+The app will be accessible at `http://localhost:3000`.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## **Scripts**
+- `npm run dev`: Start the development server.
+- `npm run build`: Build the production version.
+- `npm run start`: Start the production server.
+- `npm run lint`: Lint the codebase.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## **Folder Structure**
+- **/components**: Reusable UI components.
+- **/app**: Next.js pages and routing.
+- **/styles**: SCSS stylesheets.
+- **/services**: API service functions.
+- **/context**: State management using Context API.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## **Contributing**
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature-name`.
+3. Commit changes: `git commit -m 'Add feature-name'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Open a Pull Request.
+
+---
