@@ -1,4 +1,4 @@
-import RootLayoutWrapper from "@/app/layout-wrapper";
+import RootLayoutWrapper from "./layout-wrapper";
 
 export const metadata = {
   title: "Ironji",

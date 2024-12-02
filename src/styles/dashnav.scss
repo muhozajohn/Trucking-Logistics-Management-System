@@ -1,0 +1,58 @@
+.dashnav {
+  background-color: var(--text-p-color-1);
+  width: var(--screen-lg);
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  &__list .active {
+    color: orange;
+  }
+
+  &__list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    a {
+      text-decoration: none;
+    }
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__user-icon {
+    font-size: 2.5rem;
+    color: var(--text-p-color);
+  }
+  &__logout-icon {
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+    transform: rotate(180deg);
+  }
+
+  &__user-info {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+  }
+  &__user-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--text-p-color-2);
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+}
