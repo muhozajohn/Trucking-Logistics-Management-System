@@ -3,6 +3,10 @@
 Welcome to the **Trucking Logistics Management System**! This repository contains a fully functional frontend application built using Next.js, designed to simulate interactions between truck owners, drivers, and customers. 
 
 ---
+## **Credentials**
+- **Email** : user@example.com,
+- **password**: user123,
+---
 
 ## **Features**
 - **User Authentication**: Google OAuth 2.0 via NextAuth for secure login.
