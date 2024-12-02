@@ -1,7 +1,7 @@
 import React from "react";
 import "./blog.scss";
 import Image from "next/image";
-import { blogPosts } from "@/components/json";
+import { blogPosts } from "../../components/json";
 
 const BlogPage = () => {
 

@@ -24,17 +24,17 @@ export async function GET() {
   }
 }
 
-// Get a single truck by ID
-export async function GET_BY_ID(request) {
-  try {
-    const { id } = request.params;
-    const truck = await TruckService.getTruckById(id);
-    return Response.json(truck);
-  } catch (error) {
-    console.error('Error fetching truck:', error);
-    return Response.json({ error: error.message }, { status: 404 });
-  }
-}
+// // Get a single truck by ID
+// export async function GET_BY_ID(request) {
+//   try {
+//     const { id } = request.params;
+//     const truck = await TruckService.getTruckById(id);
+//     return Response.json(truck);
+//   } catch (error) {
+//     console.error('Error fetching truck:', error);
+//     return Response.json({ error: error.message }, { status: 404 });
+//   }
+// }
 
 // Update a truck
 export async function PUT(request) {

@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import { images } from "@/common";
-import Input from "@/common/Input";
-import Button from "@/common/Button";
+import { images } from "../common";
+import Input from "../common/Input";
+import Button from "../common/Button";
 import "../styles/welcome.scss";
 
 const Welcome = () => {
