@@ -1,8 +1,8 @@
 import { FaTruck } from "react-icons/fa";
 import { MdTrackChanges ,MdNotificationsActive } from "react-icons/md";
-import { IoIosCheckmarkCircle } from "react-icons/io";
 import { FaLocationDot ,FaPhoneVolume } from "react-icons/fa6";
 import { LuClock1 } from "react-icons/lu";
+import images from "@/common/images";
 
 
 export const trackingFeatures = [
@@ -62,4 +62,25 @@ export const navLinks = [
     path: "/blog",
   },
 
+];
+
+export const blogPosts = [
+  {
+    id: 1,
+    image: images.truck1,
+    title: "Heavy Transport Solutions",
+    description: "Exploring modern solutions in heavy transport logistics...",
+  },
+  {
+    id: 2,
+    image: images.truck2,
+    title: "Fleet Management Innovation",
+    description: "Latest trends in managing transport fleets efficiently...",
+  },
+  {
+    id: 3,
+    image: images.truck3,
+    title: "Sustainable Trucking",
+    description: "How the transport industry is embracing sustainability...",
+  },
 ];
