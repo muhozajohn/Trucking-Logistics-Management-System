@@ -1,19 +1,37 @@
 .contact {
   width: var(--screen-lg);
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  @media (max-width: 768px) {
+    padding: 0 2rem;
+  }
 
   &__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 
     @media (max-width: 768px) {
       grid-template-columns: repeat(1, 1fr);
     }
+  }
+  &__content {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  &__content-item {
+    display: flex;
+    align-items: self-start;
+    gap: 1rem;
+  }
+  &__content-icon {
+    font-size: 1.5rem;
+    color: var(--orange-primary);
   }
 
   &__title {
@@ -25,6 +43,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    grid-column: span 2
   }
 
   &__input-group {
@@ -45,7 +64,7 @@
 
       &:focus {
         outline: none;
-        border-color: #0070f3;
+        border-color: var(--orange-primary);
       }
     }
 
@@ -56,7 +75,7 @@
   }
 
   &__button {
-    background-color: #0070f3;
+    background-color: var(--orange-primary);
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -66,7 +85,7 @@
     transition: background-color 0.2s;
 
     &:hover {
-      background-color: #0051b3;
+      background-color: var(--orange-primary);
     }
   }
 }
