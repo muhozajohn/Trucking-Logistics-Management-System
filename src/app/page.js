@@ -6,12 +6,12 @@ import Location from "@/components/location";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-6 ">
-      <Welcome />
-      <Location />
-      <ServicePage />
-      <AboutPage />
-      <BlogPage />
-    </div>
+        <main>
+          <Welcome />
+          <Location />
+          <ServicePage />
+          <AboutPage />
+          <BlogPage />
+       </main>
   )
 }
