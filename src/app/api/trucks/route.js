@@ -1,4 +1,3 @@
-// import TruckService from "@/services/truckService";
 import TruckService from "../../../services/truckService";
 
 // Create a new truck
