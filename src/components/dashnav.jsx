@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { navigation } from "./json";
 import Link from "next/link";
 import { FaUserCircle, FaSignOutAlt } from "react-icons/fa";
+import { Menu, X } from "lucide-react";
 import "../styles/dashnav.scss";
 import { usePathname } from "next/navigation";
 
@@ -13,9 +14,19 @@ const Dashnav = () => {
     window.location.href = "/login";
   };
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="dashnav">
-      <ul className="dashnav__list">
+      {/* Hamburger Menu Icon for Mobile */}
+      <div className="nav__hamburger" onClick={toggleMenu}>
+        {isOpen ? <X size={24} /> : <Menu size={24} />}
+      </div>
+      <ul className={`dashnav__list ${isOpen ? 'open' : ''}`}>
         {navigation.map((item) => (
           <li
             key={item.name}
