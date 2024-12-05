@@ -1,9 +1,9 @@
 "use client";
 import { usePathname } from "next/navigation";
+import { SessionProvider } from "next-auth/react";
 import "./globals.scss";
 import Navigation from "../components/navigation";
 import Footer from "../components/footer";
-
 
 export default function RootLayoutWrapper({ children }) {
   const pathname = usePathname();
@@ -12,9 +12,11 @@ export default function RootLayoutWrapper({ children }) {
   return (
     <html lang="en">
       <body>
-        {!isDashboardRoute && <Navigation />}
-        <div className="layout">{children}</div>
-        {!isDashboardRoute && <Footer />}
+        <SessionProvider>
+          {!isDashboardRoute && <Navigation />}
+          <div className="layout">{children}</div>
+          {!isDashboardRoute && <Footer />}
+        </SessionProvider>
       </body>
     </html>
   );
