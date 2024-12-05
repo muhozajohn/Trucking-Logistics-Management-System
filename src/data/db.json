@@ -11,6 +11,18 @@
       "email": "user@example.com",
       "password": "user123",
       "role": "User"
+    },
+    {
+      "username": "Muhoza John",
+      "email": "muhozajohn123@gmail.com"
+    },
+    {
+      "username": "Muhoza John",
+      "email": "muhozajohn250@gmail.com"
+    },
+    {
+      "username": "Muhoza john",
+      "email": "muhozajohn221004576@gmail.com"
     }
   ],
   "trucks": [
